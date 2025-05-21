@@ -9,7 +9,8 @@ const ComenzarJuego =()=>{
     console.log(numero)
 }
 
-const compararNumero =()=>{
+const compararNumero =(e)=>{
+    e.preventDefault()
  const numeroIngresado = parseInt(document.getElementById("numeroIngresado").value);
 
     if(numeroIngresado===numero){
@@ -29,5 +30,3 @@ BotonEmpezar.addEventListener("click", ComenzarJuego)
 
 BotonComparar.addEventListener("click", compararNumero)
 
-// TE FALTA HACER QUE SE PUEDE JUGAR VARIAS VECES Y NO SE RECARGE
-// Y QUE MUESTRE SI ESTA CERCA O LEJOR DEL NRO
